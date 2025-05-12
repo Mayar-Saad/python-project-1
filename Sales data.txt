@@ -1,0 +1,79 @@
+data = {
+    'Customer': ['Alice Johnson1', 'Bob2 Smith', 'Charlie3 Brown', 'Diana White4', 'Edward Clark5',
+                 'Fiona6 Adams', 'George7 Wilson', 'Helen8 Green', 'Ian Thomas9', 'Jack Black10',
+                 'Alice Johnson1', 'Bob2 Smith', None, 'Diana White4', 'Edward Clark5',
+                 'Fiona6 Adams', 'George7 Wilson', 'Helen8 Green', None, 'Jack Black10',
+                 'Karen White11', 'Liam Davis12', 'Mia13 Evans', 'Nathan14 King', 'Olivia Scott15'],
+    
+    'Phone_Number': ['+1-202-555-0101', '+44-20-7946-0234', '+1-202-555-0345', '+49-30-1234500', '+91-98765-40010',
+                     '+1-202-555-0456', '+44-20-7946-0567', '+1-202-555-0678', '+49-30-9876500', '+91-98765-50021',
+                     '+1-202-555-0101', '+44-20-7946-0234', None, '+49-30-1234500', '+91-98765-40010',
+                     '+1-202-555-0456', '+44-20-7946-0567', None, '+49-30-9876500', None,
+                     '+1-202-555-0789', '+44-20-7946-0890', '+1-202-555-0901', '+49-30-1357200', '+91-98765-60030'],
+    
+    'Address': ['USA, New York, 123 Main St, 10001', 'UK, London, 45 King St, W1B 4DY', 
+                'USA, Chicago, 789 Oak Ave, 60611', 'Germany, Berlin, 12 Hauptstr, 10115', 
+                'India, Mumbai, 56 Marine Dr, 400001', 'USA, San Francisco, 34 Bay St, 94105',
+                'UK, Manchester, 22 Queen St, M2 5PD', None, 'USA, Austin, 89 River Rd, 73301', 
+                'USA, Seattle, 78 Pine St, 98101', 'USA, New York, 123 Main St, 10001', 
+                'UK, London, 45 King St, W1B 4DY', None, 'Germany, Berlin, 12 Hauptstr, 10115', 
+                'India, Mumbai, 56 Marine Dr, 400001', 'USA, San Francisco, 34 Bay St, 94105',
+                'UK, Manchester, 22 Queen St, M2 5PD', None, 'USA, Austin, 89 River Rd, 73301', 
+                'USA, Seattle, 78 Pine St, 98101', 'USA, Boston, 10 Elm St, 02108', 
+                'USA, Miami, 88 Ocean Dr, 33139', 'USA, Atlanta, 77 Peach St, 30303', 
+                'USA, Denver, 99 Rocky Rd, 80202', 'USA, Orlando, 66 Magic St, 32830'],
+    
+    'Order_ID': [1001, 1002, None, 1004, 1005, 1006, None, 1008, 1009, 1010,
+                 1001, 1002, None, 1004, 1005, 1006, None, 1008, None, 1010,
+                 1011, 1012, 1013, None, 1015],
+    
+    'Order_Date': ['2023-06-15', '2023-07-21', '2023-08-10', '2023-09-05', '2023-10-30',
+                   '2023-06-17', '2023-11-11', None, '2023-12-13', '2024-01-08',
+                   '2023-06-15', '2023-07-21', None, '2023-09-05', '2023-10-30',
+                   '2023-06-17', '2023-11-11', None, '2023-12-13', '2024-01-08',
+                   '2024-02-20', '2024-03-22', '2024-04-30', '2024-05-17', '2024-06-29'],
+    
+    'Order_Price': [200.00, 110.00, None, 75.00, 300.00, 180.00, None, 150.00, 450.00, 480.00,
+                    200.00, 110.00, None, 75.00, 300.00, 180.00, None, 150.00, None, 480.00,
+                    175.00, 250.00, 135.00, None, 280.00],
+
+    'Factory_Cost': [120.00, 80.00, None, 50.00, 200.00, 140.00, None, 100.00, 350.00, 400.00,
+                     120.00, 80.00, None, 50.00, 200.00, 140.00, None, 100.00, None, 400.00,
+                     130.00, 190.00, 100.00, None, 210.00],
+    
+    'Tax': [20.00, 10.50, None, 7.50, 30.00, 18.00, None, 15.00, 45.00, 48.00,
+            20.00, 10.50, None, 7.50, 30.00, 18.00, None, 15.00, None, 48.00,
+            17.50, 25.00, 13.50, None, 28.00],
+    
+    'Shipping_Amount': [15.00, 12.00, None, 10.00, 20.00, 15.00, None, 12.00, 25.00, 30.00,
+                        15.00, 12.00, None, 10.00, 20.00, 15.00, None, 12.00, None, 30.00,
+                        14.00, 18.00, 11.00, None, 22.00],
+    
+    'Shipping_Date': ['2023-06-18', '2023-07-23', '2023-08-12', '2023-09-08', '2023-11-01',
+                      '2023-06-20', '2023-11-13', None, '2023-12-16', '2024-01-10',
+                      '2023-06-18', '2023-07-23', None, '2023-09-08', '2023-11-01',
+                      '2023-06-20', '2023-11-13', None, '2023-12-16', '2024-01-10',
+                      '2024-02-23', '2024-03-25', '2024-05-03', '2024-05-20', '2024-06-30'],
+    
+    'Payment_Method': ['Credit Card', 'PayPal', 'Bank Transfer', 'Cash on Delivery', 'Credit Card',
+                       'PayPal', 'Bank Transfer', None, 'Credit Card', 'Debit Card',
+                       'Credit Card', 'PayPal', None, 'Cash on Delivery', 'Credit Card',
+                       'PayPal', 'Bank Transfer', None, 'Credit Card', 'Debit Card',
+                       'Apple Pay', 'Google Pay', 'Cryptocurrency', None, 'Credit Card'],
+    
+    'Customer_Type': ['Returning', 'New', 'New', 'Returning', 'New',
+                      'Returning', 'New', None, 'Returning', 'New',
+                      'Returning', 'New', None, 'Returning', 'New',
+                      'Returning', 'New', None, 'Returning', 'New',
+                      'New', 'Returning', 'New', None, 'Returning'],
+    
+    'Order_Status': ['Shipped', 'Pending', 'Canceled', 'Delivered', 'Shipped',
+                     'Processing', 'Delivered', None, 'Shipped', 'Pending',
+                     'Shipped', 'Pending', None, 'Delivered', 'Shipped',
+                     'Processing', 'Delivered', None, 'Shipped', 'Pending',
+                     'Canceled', 'Delivered', 'Shipped', None, 'Processing'],
+    
+    'Discount_Amount': [10.00, 5.00, None, 0.00, 15.00, 8.00, None, 12.00, 20.00, 25.00,
+                        10.00, 5.00, None, 0.00, 15.00, 8.00, None, 12.00, None, 25.00,
+                        7.00, 10.00, 6.00, None, 12.00]
+}
